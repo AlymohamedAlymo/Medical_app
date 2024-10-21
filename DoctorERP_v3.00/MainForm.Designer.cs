@@ -36,15 +36,15 @@ namespace DoctorERP_v3_00
             Telerik.WinControls.UI.ListViewDetailColumn listViewDetailColumn3 = new Telerik.WinControls.UI.ListViewDetailColumn("Column 2", "Gender");
             Telerik.WinControls.UI.ListViewDetailColumn listViewDetailColumn4 = new Telerik.WinControls.UI.ListViewDetailColumn("Column 3", "EncounterTime");
             Telerik.WinControls.UI.SchedulerDailyPrintStyle schedulerDailyPrintStyle1 = new Telerik.WinControls.UI.SchedulerDailyPrintStyle();
-            Telerik.WinControls.UI.GridViewDecimalColumn gridViewDecimalColumn1 = new Telerik.WinControls.UI.GridViewDecimalColumn();
-            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn1 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
-            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn2 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
-            Telerik.WinControls.UI.GridViewDecimalColumn gridViewDecimalColumn2 = new Telerik.WinControls.UI.GridViewDecimalColumn();
-            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn3 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
-            Telerik.WinControls.UI.GridViewDateTimeColumn gridViewDateTimeColumn1 = new Telerik.WinControls.UI.GridViewDateTimeColumn();
-            Telerik.WinControls.UI.GridViewDateTimeColumn gridViewDateTimeColumn2 = new Telerik.WinControls.UI.GridViewDateTimeColumn();
-            Telerik.WinControls.Data.SortDescriptor sortDescriptor1 = new Telerik.WinControls.Data.SortDescriptor();
-            Telerik.WinControls.UI.TableViewDefinition tableViewDefinition1 = new Telerik.WinControls.UI.TableViewDefinition();
+            Telerik.WinControls.UI.GridViewDecimalColumn gridViewDecimalColumn5 = new Telerik.WinControls.UI.GridViewDecimalColumn();
+            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn7 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn8 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+            Telerik.WinControls.UI.GridViewDecimalColumn gridViewDecimalColumn6 = new Telerik.WinControls.UI.GridViewDecimalColumn();
+            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn9 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+            Telerik.WinControls.UI.GridViewDateTimeColumn gridViewDateTimeColumn5 = new Telerik.WinControls.UI.GridViewDateTimeColumn();
+            Telerik.WinControls.UI.GridViewDateTimeColumn gridViewDateTimeColumn6 = new Telerik.WinControls.UI.GridViewDateTimeColumn();
+            Telerik.WinControls.Data.SortDescriptor sortDescriptor3 = new Telerik.WinControls.Data.SortDescriptor();
+            Telerik.WinControls.UI.TableViewDefinition tableViewDefinition3 = new Telerik.WinControls.UI.TableViewDefinition();
             this.mainPanel = new Telerik.WinControls.UI.RadPanel();
             this.radSplitButton1 = new Telerik.WinControls.UI.RadSplitButton();
             this.radMenuItem1 = new Telerik.WinControls.UI.RadMenuItem();
@@ -214,6 +214,7 @@ namespace DoctorERP_v3_00
             this.radLabelDoctorImage.Name = "radLabelDoctorImage";
             this.radLabelDoctorImage.Size = new System.Drawing.Size(82, 82);
             this.radLabelDoctorImage.TabIndex = 3;
+            this.radLabelDoctorImage.TextAlignment = System.Drawing.ContentAlignment.TopRight;
             // 
             // radPanelButtonsContainer
             // 
@@ -348,6 +349,7 @@ namespace DoctorERP_v3_00
             this.radLabel2.Size = new System.Drawing.Size(121, 43);
             this.radLabel2.TabIndex = 4;
             this.radLabel2.Text = "Schedule";
+            this.radLabel2.TextAlignment = System.Drawing.ContentAlignment.TopRight;
             // 
             // radLabel1
             // 
@@ -359,21 +361,22 @@ namespace DoctorERP_v3_00
             this.radLabel1.Size = new System.Drawing.Size(181, 49);
             this.radLabel1.TabIndex = 3;
             this.radLabel1.Text = "Next patient";
+            this.radLabel1.TextAlignment = System.Drawing.ContentAlignment.TopRight;
             // 
             // dashboardClockCalendarPanel
             // 
             this.dashboardClockCalendarPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(252)))), ((int)(((byte)(249)))));
             this.dashboardClockCalendarPanel.Controls.Add(this.radCalendarDashboard);
             this.dashboardClockCalendarPanel.Controls.Add(this.radClock1);
-            this.dashboardClockCalendarPanel.Location = new System.Drawing.Point(930, 87);
+            this.dashboardClockCalendarPanel.Location = new System.Drawing.Point(916, 87);
             this.dashboardClockCalendarPanel.Name = "dashboardClockCalendarPanel";
-            this.dashboardClockCalendarPanel.Size = new System.Drawing.Size(413, 303);
+            this.dashboardClockCalendarPanel.Size = new System.Drawing.Size(354, 303);
             this.dashboardClockCalendarPanel.TabIndex = 2;
             // 
             // radCalendarDashboard
             // 
             this.radCalendarDashboard.DayNameFormat = Telerik.WinControls.UI.DayNameFormat.FirstTwoLetters;
-            this.radCalendarDashboard.Location = new System.Drawing.Point(193, 75);
+            this.radCalendarDashboard.Location = new System.Drawing.Point(152, 75);
             this.radCalendarDashboard.Name = "radCalendarDashboard";
             this.radCalendarDashboard.ShowFastNavigationButtons = false;
             this.radCalendarDashboard.ShowNavigationButtons = false;
@@ -385,7 +388,7 @@ namespace DoctorERP_v3_00
             // 
             // radClock1
             // 
-            this.radClock1.Location = new System.Drawing.Point(20, 75);
+            this.radClock1.Location = new System.Drawing.Point(13, 75);
             this.radClock1.Name = "radClock1";
             this.radClock1.Size = new System.Drawing.Size(134, 135);
             this.radClock1.TabIndex = 0;
@@ -413,6 +416,7 @@ namespace DoctorERP_v3_00
             this.radLabelFirstAppointmentTomorrow.Size = new System.Drawing.Size(154, 26);
             this.radLabelFirstAppointmentTomorrow.TabIndex = 1;
             this.radLabelFirstAppointmentTomorrow.Text = "first one at 7:00 AM";
+            this.radLabelFirstAppointmentTomorrow.TextAlignment = System.Drawing.ContentAlignment.TopRight;
             this.radLabelFirstAppointmentTomorrow.Click += new System.EventHandler(this.radPanelTomorrowAppointments_Click);
             // 
             // radLabel9
@@ -425,6 +429,7 @@ namespace DoctorERP_v3_00
             this.radLabel9.Size = new System.Drawing.Size(128, 31);
             this.radLabel9.TabIndex = 1;
             this.radLabel9.Text = "appointments";
+            this.radLabel9.TextAlignment = System.Drawing.ContentAlignment.TopRight;
             this.radLabel9.Click += new System.EventHandler(this.radPanelTomorrowAppointments_Click);
             // 
             // radLabelTomorrowAppointmentsCount
@@ -437,6 +442,7 @@ namespace DoctorERP_v3_00
             this.radLabelTomorrowAppointmentsCount.Size = new System.Drawing.Size(129, 108);
             this.radLabelTomorrowAppointmentsCount.TabIndex = 1;
             this.radLabelTomorrowAppointmentsCount.Text = "32";
+            this.radLabelTomorrowAppointmentsCount.TextAlignment = System.Drawing.ContentAlignment.TopRight;
             this.radLabelTomorrowAppointmentsCount.UseCompatibleTextRendering = false;
             this.radLabelTomorrowAppointmentsCount.Click += new System.EventHandler(this.radPanelTomorrowAppointments_Click);
             // 
@@ -450,6 +456,7 @@ namespace DoctorERP_v3_00
             this.radLabel4.Size = new System.Drawing.Size(121, 30);
             this.radLabel4.TabIndex = 1;
             this.radLabel4.Text = "TOMORROW";
+            this.radLabel4.TextAlignment = System.Drawing.ContentAlignment.TopRight;
             this.radLabel4.Click += new System.EventHandler(this.radPanelTomorrowAppointments_Click);
             // 
             // radPanelTodaysAppointments
@@ -475,6 +482,7 @@ namespace DoctorERP_v3_00
             this.radLabel6.Size = new System.Drawing.Size(128, 31);
             this.radLabel6.TabIndex = 1;
             this.radLabel6.Text = "appointments";
+            this.radLabel6.TextAlignment = System.Drawing.ContentAlignment.TopRight;
             this.radLabel6.Click += new System.EventHandler(this.radPanelTodaysAppointments_Click);
             // 
             // radLabelLastAppointmentToday
@@ -486,6 +494,7 @@ namespace DoctorERP_v3_00
             this.radLabelLastAppointmentToday.Size = new System.Drawing.Size(150, 26);
             this.radLabelLastAppointmentToday.TabIndex = 1;
             this.radLabelLastAppointmentToday.Text = "last one at 5:00 PM";
+            this.radLabelLastAppointmentToday.TextAlignment = System.Drawing.ContentAlignment.TopRight;
             this.radLabelLastAppointmentToday.Click += new System.EventHandler(this.radPanelTodaysAppointments_Click);
             // 
             // radLabelTodayAppointmentsCount
@@ -498,6 +507,7 @@ namespace DoctorERP_v3_00
             this.radLabelTodayAppointmentsCount.Size = new System.Drawing.Size(129, 108);
             this.radLabelTodayAppointmentsCount.TabIndex = 1;
             this.radLabelTodayAppointmentsCount.Text = "25";
+            this.radLabelTodayAppointmentsCount.TextAlignment = System.Drawing.ContentAlignment.TopRight;
             this.radLabelTodayAppointmentsCount.UseCompatibleTextRendering = false;
             this.radLabelTodayAppointmentsCount.Click += new System.EventHandler(this.radPanelTodaysAppointments_Click);
             // 
@@ -511,6 +521,7 @@ namespace DoctorERP_v3_00
             this.radLabel3.Size = new System.Drawing.Size(71, 30);
             this.radLabel3.TabIndex = 0;
             this.radLabel3.Text = "TODAY";
+            this.radLabel3.TextAlignment = System.Drawing.ContentAlignment.TopRight;
             this.radLabel3.Click += new System.EventHandler(this.radPanelTodaysAppointments_Click);
             // 
             // radPageViewPageSchedule
@@ -712,70 +723,70 @@ namespace DoctorERP_v3_00
             this.radGridViewPatients.MasterTemplate.AllowEditRow = false;
             this.radGridViewPatients.MasterTemplate.AllowSearchRow = true;
             this.radGridViewPatients.MasterTemplate.AutoSizeColumnsMode = Telerik.WinControls.UI.GridViewAutoSizeColumnsMode.Fill;
-            gridViewDecimalColumn1.DataType = typeof(int);
-            gridViewDecimalColumn1.FieldName = "Id";
-            gridViewDecimalColumn1.HeaderText = "Id";
-            gridViewDecimalColumn1.IsAutoGenerated = true;
-            gridViewDecimalColumn1.Name = "Id";
-            gridViewDecimalColumn1.Width = 143;
-            gridViewTextBoxColumn1.FieldName = "First Name";
-            gridViewTextBoxColumn1.HeaderText = "First Name";
-            gridViewTextBoxColumn1.IsAutoGenerated = true;
-            gridViewTextBoxColumn1.Name = "First Name";
-            gridViewTextBoxColumn1.Width = 143;
-            gridViewTextBoxColumn2.FieldName = "Last Name";
-            gridViewTextBoxColumn2.HeaderText = "Last Name";
-            gridViewTextBoxColumn2.IsAutoGenerated = true;
-            gridViewTextBoxColumn2.Name = "Last Name";
-            gridViewTextBoxColumn2.Width = 143;
-            gridViewDecimalColumn2.DataType = typeof(double);
-            gridViewDecimalColumn2.FieldName = "Age";
-            gridViewDecimalColumn2.HeaderText = "Age";
-            gridViewDecimalColumn2.IsAutoGenerated = true;
-            gridViewDecimalColumn2.Name = "Age";
-            gridViewDecimalColumn2.ReadOnly = true;
-            gridViewDecimalColumn2.Width = 143;
-            gridViewTextBoxColumn3.FieldName = "Sex";
-            gridViewTextBoxColumn3.HeaderText = "Sex";
-            gridViewTextBoxColumn3.IsAutoGenerated = true;
-            gridViewTextBoxColumn3.Name = "Sex";
-            gridViewTextBoxColumn3.Width = 143;
-            gridViewDateTimeColumn1.CustomFormat = "";
-            gridViewDateTimeColumn1.FieldName = "Date of Birth";
-            gridViewDateTimeColumn1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            gridViewDateTimeColumn1.FormatString = "{0:d-M-yyyy}";
-            gridViewDateTimeColumn1.HeaderText = "Date of Birth";
-            gridViewDateTimeColumn1.IsAutoGenerated = true;
-            gridViewDateTimeColumn1.Name = "Date of Birth";
-            gridViewDateTimeColumn1.Width = 143;
-            gridViewDateTimeColumn2.CustomFormat = "";
-            gridViewDateTimeColumn2.FieldName = "Last Visit";
-            gridViewDateTimeColumn2.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            gridViewDateTimeColumn2.FormatString = "{0:d-M-yyyy}";
-            gridViewDateTimeColumn2.HeaderText = "Last Visit";
-            gridViewDateTimeColumn2.IsAutoGenerated = true;
-            gridViewDateTimeColumn2.Name = "Last Visit";
-            gridViewDateTimeColumn2.ReadOnly = true;
-            gridViewDateTimeColumn2.SortOrder = Telerik.WinControls.UI.RadSortOrder.Descending;
-            gridViewDateTimeColumn2.Width = 146;
+            gridViewDecimalColumn5.DataType = typeof(int);
+            gridViewDecimalColumn5.FieldName = "Id";
+            gridViewDecimalColumn5.HeaderText = "Id";
+            gridViewDecimalColumn5.IsAutoGenerated = true;
+            gridViewDecimalColumn5.Name = "Id";
+            gridViewDecimalColumn5.Width = 143;
+            gridViewTextBoxColumn7.FieldName = "First Name";
+            gridViewTextBoxColumn7.HeaderText = "First Name";
+            gridViewTextBoxColumn7.IsAutoGenerated = true;
+            gridViewTextBoxColumn7.Name = "First Name";
+            gridViewTextBoxColumn7.Width = 143;
+            gridViewTextBoxColumn8.FieldName = "Last Name";
+            gridViewTextBoxColumn8.HeaderText = "Last Name";
+            gridViewTextBoxColumn8.IsAutoGenerated = true;
+            gridViewTextBoxColumn8.Name = "Last Name";
+            gridViewTextBoxColumn8.Width = 143;
+            gridViewDecimalColumn6.DataType = typeof(double);
+            gridViewDecimalColumn6.FieldName = "Age";
+            gridViewDecimalColumn6.HeaderText = "Age";
+            gridViewDecimalColumn6.IsAutoGenerated = true;
+            gridViewDecimalColumn6.Name = "Age";
+            gridViewDecimalColumn6.ReadOnly = true;
+            gridViewDecimalColumn6.Width = 143;
+            gridViewTextBoxColumn9.FieldName = "Sex";
+            gridViewTextBoxColumn9.HeaderText = "Sex";
+            gridViewTextBoxColumn9.IsAutoGenerated = true;
+            gridViewTextBoxColumn9.Name = "Sex";
+            gridViewTextBoxColumn9.Width = 143;
+            gridViewDateTimeColumn5.CustomFormat = "";
+            gridViewDateTimeColumn5.FieldName = "Date of Birth";
+            gridViewDateTimeColumn5.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            gridViewDateTimeColumn5.FormatString = "{0:d-M-yyyy}";
+            gridViewDateTimeColumn5.HeaderText = "Date of Birth";
+            gridViewDateTimeColumn5.IsAutoGenerated = true;
+            gridViewDateTimeColumn5.Name = "Date of Birth";
+            gridViewDateTimeColumn5.Width = 143;
+            gridViewDateTimeColumn6.CustomFormat = "";
+            gridViewDateTimeColumn6.FieldName = "Last Visit";
+            gridViewDateTimeColumn6.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            gridViewDateTimeColumn6.FormatString = "{0:d-M-yyyy}";
+            gridViewDateTimeColumn6.HeaderText = "Last Visit";
+            gridViewDateTimeColumn6.IsAutoGenerated = true;
+            gridViewDateTimeColumn6.Name = "Last Visit";
+            gridViewDateTimeColumn6.ReadOnly = true;
+            gridViewDateTimeColumn6.SortOrder = Telerik.WinControls.UI.RadSortOrder.Descending;
+            gridViewDateTimeColumn6.Width = 146;
             this.radGridViewPatients.MasterTemplate.Columns.AddRange(new Telerik.WinControls.UI.GridViewDataColumn[] {
-            gridViewDecimalColumn1,
-            gridViewTextBoxColumn1,
-            gridViewTextBoxColumn2,
-            gridViewDecimalColumn2,
-            gridViewTextBoxColumn3,
-            gridViewDateTimeColumn1,
-            gridViewDateTimeColumn2});
+            gridViewDecimalColumn5,
+            gridViewTextBoxColumn7,
+            gridViewTextBoxColumn8,
+            gridViewDecimalColumn6,
+            gridViewTextBoxColumn9,
+            gridViewDateTimeColumn5,
+            gridViewDateTimeColumn6});
             this.radGridViewPatients.MasterTemplate.DataSource = this.patientsBindingSource;
             this.radGridViewPatients.MasterTemplate.EnableAlternatingRowColor = true;
             this.radGridViewPatients.MasterTemplate.EnableFiltering = true;
             this.radGridViewPatients.MasterTemplate.ShowFilteringRow = false;
             this.radGridViewPatients.MasterTemplate.ShowHeaderCellButtons = true;
-            sortDescriptor1.Direction = System.ComponentModel.ListSortDirection.Descending;
-            sortDescriptor1.PropertyName = "Last Visit";
+            sortDescriptor3.Direction = System.ComponentModel.ListSortDirection.Descending;
+            sortDescriptor3.PropertyName = "Last Visit";
             this.radGridViewPatients.MasterTemplate.SortDescriptors.AddRange(new Telerik.WinControls.Data.SortDescriptor[] {
-            sortDescriptor1});
-            this.radGridViewPatients.MasterTemplate.ViewDefinition = tableViewDefinition1;
+            sortDescriptor3});
+            this.radGridViewPatients.MasterTemplate.ViewDefinition = tableViewDefinition3;
             this.radGridViewPatients.Name = "radGridViewPatients";
             this.radGridViewPatients.ShowHeaderCellButtons = true;
             this.radGridViewPatients.Size = new System.Drawing.Size(1018, 576);
@@ -851,11 +862,13 @@ namespace DoctorERP_v3_00
             this.Controls.Add(this.radPageView1);
             this.Controls.Add(this.mainPanel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.MaximizeBox = false;
             this.Name = "MainForm";
+            this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.RightToLeftLayout = true;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Medical app";
             this.ThemeName = "MedicalAppTheme";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.MainForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.mainPanel)).EndInit();
             this.mainPanel.ResumeLayout(false);
